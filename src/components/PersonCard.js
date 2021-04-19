@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter'
 
 const PersonCard = props => {
     return(
@@ -6,9 +7,12 @@ const PersonCard = props => {
             <h1>{props.lastName}, {props.firstName}</h1>
             <p>Age: {props.age}</p>
             <p>Hair Color: {props.hairColor}</p>
+            <Counter/>
         </div>
     )
 }
+
+
 
 /* class PersonCard extends Component {
     constructor(props) {
@@ -31,4 +35,4 @@ const PersonCard = props => {
 }
 */
 
-export default PersonCard
+export default PersonCard;
